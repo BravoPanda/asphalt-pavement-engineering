@@ -1,0 +1,30 @@
+name: CI Verification
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Run automated test suite (genome, OAC recommender, gradation optimizer, volumetrics, audit)
+        run: python -m unittest discover -s tests -p "test_*.py" -v
+
+      - name: Smoke test CLI tools
+        run: |
+          python skills/asphalt-pavement-engineering/scripts/oac_recommender.py --list
+          python skills/asphalt-pavement-engineering/scripts/oac_recommender.py --mix SMA-13 --binder SBS_I-D --agg basalt --fine-agg limestone --climate hot_summer --traffic extra_heavy
+          python skills/asphalt-pavement-engineering/scripts/gradation_optimizer.py skills/asphalt-pavement-engineering/examples/sma13_basalt_sbs.json
+          python skills/asphalt-pavement-engineering/scripts/volumetric_calculator.py
+          python skills/asphalt-pavement-engineering/scripts/data_verification_audit.py

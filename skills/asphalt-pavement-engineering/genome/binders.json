@@ -1,0 +1,106 @@
+{
+  "schema_version": "1.0.0",
+  "description": "沥青结合料材料基因库 (Asphalt Binder Genome Database)",
+  "reference_binder": "70#",
+  "binders": {
+    "50#": {
+      "name": "50号A级道路石油沥青",
+      "category": "neat",
+      "pg_grade": "PG 70-16",
+      "gamma_b": 1.032,
+      "oac_offset_pct": -0.10,
+      "mixing_temp_c": [150, 165],
+      "compaction_temp_c": [135, 150],
+      "applicable_climate": ["hot_summer", "temperate"],
+      "notes": "稠度较高、高温抗车辙能力优于70#，低温抗裂偏弱，严寒地区慎用。"
+    },
+    "70#": {
+      "name": "70号A级道路石油沥青",
+      "category": "neat",
+      "pg_grade": "PG 64-22",
+      "gamma_b": 1.030,
+      "oac_offset_pct": 0.00,
+      "mixing_temp_c": [145, 165],
+      "compaction_temp_c": [130, 145],
+      "applicable_climate": ["hot_summer", "temperate", "cold_winter"],
+      "notes": "国内高速公路中下面层与常规面层最常用基准道路石油沥青。"
+    },
+    "90#": {
+      "name": "90号A级道路石油沥青",
+      "category": "neat",
+      "pg_grade": "PG 58-28",
+      "gamma_b": 1.026,
+      "oac_offset_pct": 0.05,
+      "mixing_temp_c": [140, 160],
+      "compaction_temp_c": [125, 140],
+      "applicable_climate": ["cold_winter", "severe_cold"],
+      "notes": "低温延度与抗裂性能较好，适用于冬严寒、冬寒区；高温重载路段易发车辙。"
+    },
+    "SBS_I-C": {
+      "name": "SBS改性沥青 (I-C)",
+      "category": "polymer_modified",
+      "pg_grade": "PG 70-28",
+      "gamma_b": 1.032,
+      "oac_offset_pct": 0.15,
+      "mixing_temp_c": [165, 180],
+      "compaction_temp_c": [150, 165],
+      "applicable_climate": ["temperate", "cold_winter", "severe_cold"],
+      "notes": "兼顾高低温性能，尤其适合寒冷地区高速公路表面层与中面层。"
+    },
+    "SBS_I-D": {
+      "name": "SBS改性沥青 (I-D)",
+      "category": "polymer_modified",
+      "pg_grade": "PG 76-22",
+      "gamma_b": 1.035,
+      "oac_offset_pct": 0.20,
+      "mixing_temp_c": [170, 185],
+      "compaction_temp_c": [155, 170],
+      "applicable_climate": ["hot_summer", "temperate", "cold_winter"],
+      "notes": "高速公路重载交通上/中面层与SMA主流结合料，注意严控出料温度不超过195℃以防热降解。"
+    },
+    "HVA": {
+      "name": "高粘改性沥青 (High Viscosity Asphalt)",
+      "category": "high_viscosity",
+      "pg_grade": "PG 82-22",
+      "gamma_b": 1.038,
+      "oac_offset_pct": 0.35,
+      "mixing_temp_c": [175, 190],
+      "compaction_temp_c": [160, 175],
+      "applicable_climate": ["hot_summer", "temperate", "heavy_rain"],
+      "notes": "60℃动力粘度极高（常≥20000 Pa·s），专用于OGFC/PAC排水降噪路面及特重交通桥面铺装。"
+    },
+    "AR": {
+      "name": "废胎胶粉橡胶沥青 (Asphalt Rubber)",
+      "category": "rubber_modified",
+      "pg_grade": "PG 76-28",
+      "gamma_b": 1.045,
+      "oac_offset_pct": 1.35,
+      "mixing_temp_c": [175, 190],
+      "compaction_temp_c": [155, 170],
+      "applicable_climate": ["hot_summer", "temperate", "cold_winter"],
+      "notes": "含18%~22%废胎胶粉，粘度大且膜厚需求高，油石比显著高于常规沥青，抗反射裂缝性能优异。"
+    },
+    "HMA": {
+      "name": "高模量沥青 (High Modulus Asphalt)",
+      "category": "high_modulus",
+      "pg_grade": "PG 82-16",
+      "gamma_b": 1.036,
+      "oac_offset_pct": -0.10,
+      "mixing_temp_c": [165, 180],
+      "compaction_temp_c": [150, 165],
+      "applicable_climate": ["hot_summer", "temperate"],
+      "notes": "用于长寿命路面中下面层（EME/HMAC），抗车辙与抗疲劳模量高，需重点校核低温抗裂性能。"
+    },
+    "WMA_SBS": {
+      "name": "温拌SBS改性沥青",
+      "category": "warm_mix",
+      "pg_grade": "PG 76-22",
+      "gamma_b": 1.034,
+      "oac_offset_pct": 0.15,
+      "mixing_temp_c": [140, 155],
+      "compaction_temp_c": [125, 140],
+      "applicable_climate": ["hot_summer", "temperate", "cold_winter", "severe_cold"],
+      "notes": "较热拌降低施工温度25~30℃，节能减排，适用于隧道、低温季节及长距离运料工况。"
+    }
+  }
+}

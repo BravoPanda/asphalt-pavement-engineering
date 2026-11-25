@@ -1,0 +1,122 @@
+{
+  "schema_version": "1.0.0",
+  "description": "集料岩性与物理特征基因库 (Aggregate Lithology Genome Database)",
+  "reference_gamma_sb": 2.70,
+  "aggregates": {
+    "basalt": {
+      "name": "致密玄武岩",
+      "acidity": "basic",
+      "gamma_sb": 2.88,
+      "gamma_sa": 2.95,
+      "water_absorption_pct": 0.85,
+      "psv_typical": 46,
+      "crushing_value_pct": 12.0,
+      "suitable_layers": ["surface", "middle"],
+      "warnings": []
+    },
+    "porous_basalt": {
+      "name": "多孔玄武岩",
+      "acidity": "basic",
+      "gamma_sb": 2.78,
+      "gamma_sa": 2.92,
+      "water_absorption_pct": 1.75,
+      "psv_typical": 48,
+      "crushing_value_pct": 15.0,
+      "suitable_layers": ["surface", "middle"],
+      "warnings": [
+        "多孔玄武岩吸水率偏高（约1.5%~2.2%），显著增加沥青吸收量Pba，务必实测吸水率与毛体积密度并注意防过度吸油导致有效膜厚不足。"
+      ]
+    },
+    "diabase": {
+      "name": "辉绿岩",
+      "acidity": "basic",
+      "gamma_sb": 2.85,
+      "gamma_sa": 2.91,
+      "water_absorption_pct": 0.72,
+      "psv_typical": 45,
+      "crushing_value_pct": 13.0,
+      "suitable_layers": ["surface", "middle"],
+      "warnings": []
+    },
+    "limestone": {
+      "name": "石灰岩",
+      "acidity": "basic",
+      "gamma_sb": 2.69,
+      "gamma_sa": 2.73,
+      "water_absorption_pct": 0.55,
+      "psv_typical": 38,
+      "crushing_value_pct": 18.0,
+      "suitable_layers": ["middle", "bottom", "base"],
+      "warnings": [
+        "石灰岩为强碱性集料，与沥青粘附性极佳，但磨光值(PSV)通常偏低，高速公路表面层抗滑磨耗要求高时不宜单独作为粗集料。"
+      ]
+    },
+    "granite": {
+      "name": "花岗岩",
+      "acidity": "acidic",
+      "gamma_sb": 2.65,
+      "gamma_sa": 2.70,
+      "water_absorption_pct": 0.70,
+      "psv_typical": 44,
+      "crushing_value_pct": 19.0,
+      "suitable_layers": ["surface", "middle", "bottom"],
+      "warnings": [
+        "花岗岩属典型酸性集料（SiO2含量>65%），与沥青粘附等级常低于4级，水损害风险高！强烈建议掺加1.5%~2.0%消石灰替代部分矿粉，或掺加0.3%~0.5%胺类/非胺类抗剥落剂，并严格检验TSR≥80%。"
+      ]
+    },
+    "andesite": {
+      "name": "安山岩",
+      "acidity": "neutral",
+      "gamma_sb": 2.71,
+      "gamma_sa": 2.78,
+      "water_absorption_pct": 0.95,
+      "psv_typical": 44,
+      "crushing_value_pct": 16.0,
+      "suitable_layers": ["surface", "middle"],
+      "warnings": [
+        "安山岩多属中性集料，使用前需实测水煮法粘附性等级，若低于4级需采取抗剥落措施。"
+      ]
+    },
+    "steel_slag": {
+      "name": "钢渣集料",
+      "acidity": "basic",
+      "gamma_sb": 3.28,
+      "gamma_sa": 3.48,
+      "water_absorption_pct": 1.75,
+      "psv_typical": 50,
+      "crushing_value_pct": 14.0,
+      "suitable_layers": ["surface", "middle"],
+      "warnings": [
+        "钢渣密度极大（3.2~3.5），质量法油石比需按体积等效大幅折减；同时表面多孔吸水率高，需兼顾沥青吸收补偿。",
+        "钢渣必须经过充分陈化（通常≥6个月），严格检验游离氧化钙(f-CaO≤3%)及浸水膨胀率（≤2.0%），防止路面鼓包开裂。"
+      ]
+    },
+    "manufactured_sand": {
+      "name": "石灰岩机制砂",
+      "acidity": "basic",
+      "gamma_sb": 2.68,
+      "gamma_sa": 2.73,
+      "water_absorption_pct": 0.70,
+      "psv_typical": 38,
+      "crushing_value_pct": 20.0,
+      "suitable_layers": ["surface", "middle", "bottom", "base"],
+      "warnings": [
+        "机制砂需重点控制砂当量（≥60%）与亚甲蓝值（MBV≤25 g/kg），防止泥粉过多劣化水稳定性。"
+      ]
+    },
+    "rap": {
+      "name": "沥青路面回收料 (RAP)",
+      "acidity": "mixed",
+      "gamma_sb": 2.64,
+      "gamma_sa": 2.70,
+      "water_absorption_pct": 0.85,
+      "psv_typical": 40,
+      "crushing_value_pct": 20.0,
+      "residual_binder_pct": 4.2,
+      "suitable_layers": ["middle", "bottom", "base"],
+      "warnings": [
+        "掺加RAP时需实测旧料沥青含量、抽提旧沥青针入度及软化点，新沥青用量须扣除有效再生旧沥青贡献，大掺量（≥25%）需配套再生剂。"
+      ]
+    }
+  }
+}

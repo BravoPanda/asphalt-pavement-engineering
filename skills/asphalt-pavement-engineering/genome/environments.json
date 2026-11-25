@@ -1,0 +1,63 @@
+{
+  "schema_version": "1.0.0",
+  "description": "气候分区与交通荷载基因库 (Climate & Traffic Genome Database)",
+  "climates": {
+    "hot_summer": {
+      "name": "夏炎热区 (高温抗车辙优先)",
+      "oac_offset_pct": -0.15,
+      "min_ds_modified": 3000,
+      "min_strain_ue": 2000,
+      "notes": "高温荷载易产生车辙与泛油，初始油石比宜取规范中值偏下限。"
+    },
+    "temperate": {
+      "name": "温和过渡区 (高低温均衡)",
+      "oac_offset_pct": 0.00,
+      "min_ds_modified": 2800,
+      "min_strain_ue": 2500,
+      "notes": "兼顾高温稳定性与低温抗裂性，取均衡中值。"
+    },
+    "cold_winter": {
+      "name": "冬寒区 (兼顾抗裂与防冻融)",
+      "oac_offset_pct": 0.10,
+      "min_ds_modified": 2400,
+      "min_strain_ue": 2800,
+      "notes": "低温缩裂与冻融循环风险高，初始油石比宜适当偏上限。"
+    },
+    "severe_cold": {
+      "name": "冬严寒区 (低温抗裂优先)",
+      "oac_offset_pct": 0.20,
+      "min_ds_modified": 2000,
+      "min_strain_ue": 3000,
+      "notes": "极端低温易开裂，应适当提高有效沥青膜厚度并优选低PG等级结合料。"
+    },
+    "heavy_rain": {
+      "name": "潮湿多雨区 (抗水损害优先)",
+      "oac_offset_pct": 0.15,
+      "min_ds_modified": 2800,
+      "min_strain_ue": 2500,
+      "notes": "强降雨区易发生水损害与松散剥落，适当增加膜厚并严格控制空隙率与TSR。"
+    }
+  },
+  "traffic_levels": {
+    "light": {
+      "name": "轻交通",
+      "oac_offset_pct": 0.10,
+      "notes": "压密效应弱，油石比可略偏高以提升耐久性。"
+    },
+    "medium": {
+      "name": "中等交通",
+      "oac_offset_pct": 0.00,
+      "notes": "常规标准取值。"
+    },
+    "heavy": {
+      "name": "重交通",
+      "oac_offset_pct": -0.05,
+      "notes": "高速公路常见等级，需严格控制高温稳定度。"
+    },
+    "extra_heavy": {
+      "name": "特重/极重交通",
+      "oac_offset_pct": -0.15,
+      "notes": "重载超载车辆密集，油石比严控偏下限以防车辙、推挤与泛油。"
+    }
+  }
+}
